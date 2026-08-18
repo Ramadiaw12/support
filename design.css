@@ -11,6 +11,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100
 }
 
 .app-container {
@@ -24,11 +25,11 @@ body {
   overflow: hidden;
 }
 
-/* ===== SIDEBAR GAUCHE ===== */
+/*  SIDEBAR GAUCHE  */
 .sidebar {
   width: 320px;
-  background: #f8fafc;
-  border-right: 1px solid #e2e8f0;
+  background: #fa833e;
+  border-right: 1px solid #eeaf5c;
   display: flex;
   flex-direction: column;
   padding: 20px 0;
@@ -36,20 +37,21 @@ body {
 
 .sidebar-header {
   padding: 0 20px 20px 20px;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid #f5cf88;
 }
 
 .sidebar-header h2 {
-  font-size: 1.5rem;
+  font-size: 2.3rem;
   color: #0f172a;
   margin-bottom: 12px;
+  padding: 12px
 }
 
 #search {
   width: 100%;
   padding: 10px 14px;
   border-radius: 30px;
-  border: 1px solid #d1d5db;
+  border: 1px solid #f3c17f;
   font-size: 0.9rem;
   outline: none;
   transition: 0.2s;
@@ -106,20 +108,20 @@ body {
 }
 .link-item:hover {
   background: #dbeafe;
-  color: #1d4ed8;
+  color: #161a25;
 }
 
 .link-item.active {
-  background: #3b82f6;
+  background: #181b1f;
   color: white;
 }
 
-/* ===== PANEL DROIT (ChatGPT-like) ===== */
+/*  PANEL DROIT   */
 .main-panel {
   flex: 1;
   display: flex;
   flex-direction: column;
-  background: white;
+  
 }
 
 .chat-interface {
