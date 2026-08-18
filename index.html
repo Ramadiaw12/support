@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>📚 Plateforme Ressources Informatique</title>
-  <link rel="stylesheet" href="design.css">
+  <link rel="stylesheet" href="style.css">
   <!-- Font Awesome pour les icônes -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -13,26 +13,46 @@
     <!-- PANEL GAUCHE : Arborescence -->
     <aside class="sidebar">
       <div class="sidebar-header">
-        <h2>Ressources</h2>
-        <input type="text" id="search" placeholder="🔍 Rechercher un lien...">
+        <h2>📂 Supports</h2>
+        <div class="search-wrapper">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" id="search" placeholder="Search...">
+        </div>
       </div>
       <nav id="tree-container">
         <!-- Généré dynamiquement par JavaScript -->
       </nav>
     </aside>
 
-    <!-- PANEL DROIT : Affichage du lien sélectionné -->
+    <!-- PANEL DROIT : Contenu -->
     <main class="main-panel">
-      <div class="chat-interface">
-        <div class="chat-header">
-          <h3 id="selected-title">Sélectionnez un lien</h3>
+      <div class="content-header">
+        <div class="breadcrumb">
+          <span id="breadcrumb-path">Uptime Formation</span>
         </div>
-        <div class="chat-body" id="content-display">
-          <p style="color: #888;">Cliquez sur un lien dans la colonne de gauche pour l’afficher ici.</p>
+        <div class="module-info">
+          <span class="module-badge">Module 8</span>
+          <h1 id="page-title">IA POUR LES DEVS</h1>
+          <p id="page-subtitle">Maîtriser les outils IA pour le développement</p>
         </div>
-        <div class="chat-footer">
-          <input type="text" placeholder="Ajouter un commentaire ou une note..." disabled>
-          <button disabled>Envoyer</button>
+      </div>
+      <div class="content-body" id="content-display">
+        <div class="welcome-message">
+          <i class="fas fa-hand-peace" style="font-size: 3rem; color: #e67e22; margin-bottom: 20px;"></i>
+          <h2>Bienvenue sur votre plateforme de ressources</h2>
+          <p>Sélectionnez une ressource dans le menu de gauche pour commencer</p>
+          <div class="quick-stats">
+            <div class="stat">
+              <i class="fas fa-folder-open"></i>
+              <span id="total-categories">0</span>
+              <small>Catégories</small>
+            </div>
+            <div class="stat">
+              <i class="fas fa-link"></i>
+              <span id="total-links">0</span>
+              <small>Ressources</small>
+            </div>
+          </div>
         </div>
       </div>
     </main>

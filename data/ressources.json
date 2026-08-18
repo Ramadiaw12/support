@@ -1,32 +1,76 @@
 {
   "categories": [
     {
-      "nom": "🔹 Langages & Frameworks",
+      "nom": "Environnement de travail",
       "sousCategories": [
         {
-          "nom": "Python",
+          "nom": "Introduction",
           "liens": [
-            { "titre": "Documentation officielle Python", "url": "https://docs.python.org/fr/3/" },
-            { "titre": "Real Python - Tutoriels", "url": "https://realpython.com/" }
+            { "titre": "Prise en main de l'environnement", "url": "https://example.com/intro" }
           ]
         },
         {
-          "nom": "JavaScript",
+          "nom": "Docker",
           "liens": [
-            { "titre": "MDN Web Docs", "url": "https://developer.mozilla.org/fr/" },
-            { "titre": "JavaScript Info", "url": "https://javascript.info/" }
+            { "titre": "Docker Desktop", "url": "https://www.docker.com/products/docker-desktop/" },
+            { "titre": "Docker Documentation", "url": "https://docs.docker.com/" }
+          ]
+        },
+        {
+          "nom": "Linux",
+          "liens": [
+            { "titre": "Commandes Linux essentielles", "url": "https://example.com/linux-commands" }
+          ]
+        },
+        {
+          "nom": "Git et Gitlab",
+          "liens": [
+            { "titre": "Git Documentation", "url": "https://git-scm.com/doc" },
+            { "titre": "GitLab", "url": "https://about.gitlab.com/" }
+          ]
+        },
+        {
+          "nom": "Python",
+          "liens": [
+            { "titre": "Python Documentation", "url": "https://docs.python.org/" }
+          ]
+        },
+        {
+          "nom": "Kubernetes",
+          "liens": [
+            { "titre": "Kubernetes Documentation", "url": "https://kubernetes.io/docs/" }
+          ]
+        },
+        {
+          "nom": "Ansible",
+          "liens": [
+            { "titre": "Ansible Documentation", "url": "https://docs.ansible.com/" }
+          ]
+        },
+        {
+          "nom": "Suite Elastic",
+          "liens": [
+            { "titre": "Elastic Stack", "url": "https://www.elastic.co/what-is/elk-stack" }
           ]
         }
       ]
     },
     {
-      "nom": "🛠️ Outils & Devops",
+      "nom": "IA pour les devs",
       "sousCategories": [
         {
-          "nom": "Docker",
+          "nom": "Jour 1 - Fondamentaux",
           "liens": [
-            { "titre": "Docker Hub", "url": "https://hub.docker.com/" },
-            { "titre": "Docker Documentation", "url": "https://docs.docker.com/" }
+            { "titre": "0 - Lexique", "url": "https://example.com/ia-lexique" },
+            { "titre": "1 - Typologie des Outils IA", "url": "https://example.com/ia-typologie" },
+            { "titre": "1 - TP Configuration et Premier Pas", "url": "https://example.com/ia-tp1" },
+            { "titre": "2 - Prompt Engineering pour", "url": "https://example.com/ia-prompt" }
+          ]
+        },
+        {
+          "nom": "Jour 2 - Avancé",
+          "liens": [
+            { "titre": "1 - Modèles avancés", "url": "https://example.com/ia-avance" }
           ]
         }
       ]

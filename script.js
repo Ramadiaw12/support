@@ -2,11 +2,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const treeContainer = document.getElementById('tree-container');
   const searchInput = document.getElementById('search');
   const contentDisplay = document.getElementById('content-display');
-  const selectedTitle = document.getElementById('selected-title');
+  const pageTitle = document.getElementById('page-title');
+  const pageSubtitle = document.getElementById('page-subtitle');
+  const breadcrumbPath = document.getElementById('breadcrumb-path');
+  const totalCategories = document.getElementById('total-categories');
+  const totalLinks = document.getElementById('total-links');
 
   let allData = null;
+  let linkCount = 0;
+  let categoryCount = 0;
 
-  // Mapping des icônes par catégorie
+  // Mapping des icônes
   const categoryIcons = {
     "DevOps": "fa-solid fa-server",
     "Data": "fa-solid fa-database",
@@ -28,11 +34,13 @@ document.addEventListener('DOMContentLoaded', () => {
     "Python": "fa-brands fa-python",
     "JavaScript": "fa-brands fa-js",
     "Java": "fa-brands fa-java",
+    "Environnement de travail": "fa-solid fa-laptop-code",
+    "Fondamentaux": "fa-solid fa-book-open",
+    "Avancé": "fa-solid fa-rocket",
     "default": "fa-solid fa-folder"
   };
 
   function getIconForCategory(categoryName) {
-    // Cherche une correspondance partielle
     for (let [key, icon] of Object.entries(categoryIcons)) {
       if (categoryName.toLowerCase().includes(key.toLowerCase())) {
         return icon;
@@ -46,14 +54,22 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(res => res.json())
     .then(data => {
       allData = data;
+      // Compter les éléments
+      data.categories.forEach(cat => {
+        categoryCount++;
+        cat.sousCategories.forEach(sub => {
+          linkCount += sub.liens.length;
+        });
+      });
+      totalCategories.textContent = categoryCount;
+      totalLinks.textContent = linkCount;
       buildTree(data);
     })
     .catch(err => {
-      treeContainer.innerHTML = '<p style="color:red;">⚠️ Erreur chargement des ressources.</p>';
+      treeContainer.innerHTML = '<p style="color:red; padding: 12px;">⚠️ Erreur chargement des ressources.</p>';
       console.error(err);
     });
 
-  // Construction de l'arborescence avec accordéon
   function buildTree(data) {
     treeContainer.innerHTML = '';
     
@@ -61,21 +77,18 @@ document.addEventListener('DOMContentLoaded', () => {
       const catDiv = document.createElement('div');
       catDiv.className = 'category';
 
-      //  EN-TÊTE DE CATÉGORIE (cliquable) 
+      // En-tête de catégorie
       const header = document.createElement('div');
       header.className = 'category-header';
       
-      // Icône
       const icon = document.createElement('i');
       icon.className = getIconForCategory(cat.nom);
-      icon.style.cssText = 'font-size: 1.3rem; width: 28px; color: #0f172a;';
+      icon.style.cssText = 'font-size: 1rem; width: 24px; color: #495057;';
       
-      // Nom
       const name = document.createElement('span');
       name.className = 'category-name';
       name.textContent = cat.nom;
       
-      // Flèche toggle
       const toggle = document.createElement('span');
       toggle.className = 'category-toggle';
       toggle.innerHTML = '▶';
@@ -84,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
       header.appendChild(name);
       header.appendChild(toggle);
       
-      //  CONTENU DE LA CATÉGORIE 
+      // Contenu
       const content = document.createElement('div');
       content.className = 'category-content';
       
@@ -100,18 +113,29 @@ document.addEventListener('DOMContentLoaded', () => {
         sub.liens.forEach(lien => {
           const linkEl = document.createElement('a');
           linkEl.className = 'link-item';
-          linkEl.textContent = `• ${lien.titre}`;
+          linkEl.textContent = lien.titre;
           linkEl.dataset.url = lien.url;
           linkEl.dataset.titre = lien.titre;
+          linkEl.dataset.category = cat.nom;
+          linkEl.dataset.subcategory = sub.nom;
 
           linkEl.addEventListener('click', (e) => {
             e.preventDefault();
-            selectedTitle.textContent = lien.titre;
+            
+            // Mettre à jour le panneau droit
+            pageTitle.textContent = lien.titre;
+            pageSubtitle.textContent = `${cat.nom} › ${sub.nom}`;
+            breadcrumbPath.textContent = `Uptime Formation › ${cat.nom}`;
+            
             contentDisplay.innerHTML = `
-              <iframe src="${lien.url}" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
-              <p style="margin-top: 16px; font-size: 0.9rem; color: #555;">
-                🔗 <a href="${lien.url}" target="_blank">Ouvrir dans un nouvel onglet</a>
-              </p>
+              <div class="content-display-content">
+                <iframe src="${lien.url}" loading="lazy" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+                <div class="link-actions">
+                  <a href="${lien.url}" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> Ouvrir dans un nouvel onglet
+                  </a>
+                </div>
+              </div>
             `;
 
             document.querySelectorAll('.link-item').forEach(el => el.classList.remove('active'));
@@ -124,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
         content.appendChild(subDiv);
       });
 
-      // GESTION DU CLIC SUR L'EN-TÊTE 
+      // Gestion accordéon
       let isOpen = false;
       header.addEventListener('click', () => {
         isOpen = !isOpen;
@@ -145,13 +169,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // === RECHERCHE AVEC FILTRE ===
+  // Recherche
   searchInput.addEventListener('input', (e) => {
     const query = e.target.value.toLowerCase().trim();
     if (!allData) return;
 
     if (query === '') {
       buildTree(allData);
+      // Réouvrir la première catégorie
+      const firstContent = document.querySelector('.category-content');
+      const firstToggle = document.querySelector('.category-toggle');
+      if (firstContent) {
+        firstContent.classList.add('open');
+        firstToggle.classList.add('rotated');
+      }
       return;
     }
 
@@ -176,7 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     buildTree(filtered);
     
-    // Ouvrir automatiquement toutes les catégories lors de la recherche
+    // Ouvrir toutes les catégories lors de la recherche
     document.querySelectorAll('.category-content').forEach(el => {
       el.classList.add('open');
     });
