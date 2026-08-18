@@ -107,7 +107,6 @@ body {
   transition: 0.15s;
 }
 .link-item:hover {
-  background: #dbeafe;
   color: #161a25;
 }
 
