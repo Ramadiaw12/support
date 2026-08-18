@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             contentDisplay.innerHTML = `
               <div class="content-display-content">
-                <iframe src="${lien.url}" loading="lazy" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+                <iframe.src = `/proxy?url=${encodeURIComponent(lien.url)}`;" loading="lazy" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
                 <div class="link-actions">
                   <a href="${lien.url}" target="_blank">
                     <i class="fas fa-external-link-alt"></i> Ouvrir dans un nouvel onglet
