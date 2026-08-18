@@ -1,0 +1,35 @@
+{
+  "categories": [
+    {
+      "nom": "🔹 Langages & Frameworks",
+      "sousCategories": [
+        {
+          "nom": "Python",
+          "liens": [
+            { "titre": "Documentation officielle Python", "url": "https://docs.python.org/fr/3/" },
+            { "titre": "Real Python - Tutoriels", "url": "https://realpython.com/" }
+          ]
+        },
+        {
+          "nom": "JavaScript",
+          "liens": [
+            { "titre": "MDN Web Docs", "url": "https://developer.mozilla.org/fr/" },
+            { "titre": "JavaScript Info", "url": "https://javascript.info/" }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "🛠️ Outils & Devops",
+      "sousCategories": [
+        {
+          "nom": "Docker",
+          "liens": [
+            { "titre": "Docker Hub", "url": "https://hub.docker.com/" },
+            { "titre": "Docker Documentation", "url": "https://docs.docker.com/" }
+          ]
+        }
+      ]
+    }
+  ]
+}
