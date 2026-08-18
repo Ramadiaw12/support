@@ -39,7 +39,7 @@ body {
   background: var(--paper);
 }
 
-/* ============ SIDEBAR GAUCHE ============ */
+/*  SIDEBAR GAUCHE  */
 .sidebar {
   width: 340px;
   min-width: 340px;
@@ -122,7 +122,7 @@ body {
   border-radius: 10px;
 }
 
-/* ============ ARBORESCENCE ============ */
+/*  ARBORESCENCE  */
 .category {
   margin-bottom: 4px;
 }
@@ -181,7 +181,7 @@ body {
   max-height: 2000px;
 }
 
-/* sous-catégories — repère "fiche de catalogue" */
+/* sous-catégories —repère "fiche de catalogue" */
 .subcategory {
   margin: 6px 0 6px 12px;
   padding-left: 14px;
