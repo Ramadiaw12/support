@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
         content.appendChild(subDiv);
       });
 
-      // === GESTION DU CLIC SUR L'EN-TÊTE (accordéon) ===
+      // GESTION DU CLIC SUR L'EN-TÊTE 
       let isOpen = false;
       header.addEventListener('click', () => {
         isOpen = !isOpen;
