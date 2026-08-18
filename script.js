@@ -129,13 +129,13 @@ document.addEventListener('DOMContentLoaded', () => {
             
             contentDisplay.innerHTML = `
               <div class="content-display-content">
-                <iframe.src = `/proxy?url=${encodeURIComponent(lien.url)}`;" loading="lazy" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
-                <div class="link-actions">
-                  <a href="${lien.url}" target="_blank">
-                    <i class="fas fa-external-link-alt"></i> Ouvrir dans un nouvel onglet
-                  </a>
+                    <iframe src="/proxy?url=${encodeURIComponent(lien.url)}" loading="lazy" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+                    <div class="link-actions">
+                    <a href="${lien.url}" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Ouvrir dans un nouvel onglet
+                    </a>
+                    </div>
                 </div>
-              </div>
             `;
 
             document.querySelectorAll('.link-item').forEach(el => el.classList.remove('active'));
