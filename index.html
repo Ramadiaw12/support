@@ -1,12 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drop_Link</title>
-    <link rel="stylesheet" href="style/design.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Air Drop</title>
+  <link rel="stylesheet" href="design.css">
 </head>
 <body>
-    
+  <div class="app-container">
+    <!-- PANEL GAUCHE : Arborescence -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>📂 Ressources</h2>
+        <input type="text" id="search" placeholder="🔍 Rechercher un lien...">
+      </div>
+      <nav id="tree-container">
+        <!-- Généré dynamiquement par JavaScript -->
+      </nav>
+    </aside>
+
+    <!-- PANEL DROIT : Affichage du lien sélectionné -->
+    <main class="main-panel">
+      <div class="chat-interface">
+        <div class="chat-header">
+          <h3 id="selected-title">Sélectionnez un lien</h3>
+        </div>
+        <div class="chat-body" id="content-display">
+          <p style="color: #888;">Cliquez sur un lien dans la colonne de gauche pour l’afficher ici.</p>
+        </div>
+        <div class="chat-footer">
+          <input type="text" placeholder="Ajouter un commentaire ou une note..." disabled>
+          <button disabled>Envoyer</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
