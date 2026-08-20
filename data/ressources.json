@@ -127,7 +127,7 @@
           "liens":[
             { "titre": "0- Everything for the cloud", "url": "https://drive.google.com/drive/u/0/folders/1_iB9UnsVlOWvdjKVmtC7b8b26L2ORdVR" },
             { "titre": "1- English ", "url": "https://drive.google.com/drive/u/0/folders/1UVI5yT-5JfMwyHHloxPwkuuPm08L_zBn" },
-            { "titre": "2- Microservices", "url": "https://drive.google.com/drive/u/0/folders/1p5jc-bYodKcfgLX8UcCf4krctg0xzoFg"},
+            { "titre": "2- Clouds Blueprints", "url": "https://github.com/ravikiranpagidi/alibaba-cloud-blueprints"},
             { "titre": "3- Cloud Engineer", "url": "https://github.com/AhmedAlhusaini/AWS-Cloud-Practitioner-SelfStudy-Materials" }
 
           ]
@@ -158,7 +158,7 @@
           "liens":[
             { "titre": "0- Books for cybersecurity", "url": "https://drive.google.com/drive/u/0/folders/1DqvFPxC3ROZgRndVYsfpX7C7Nqx1CnmL" },
             { "titre": "1- Cybersecurity Docs ", "url": "https://drive.google.com/drive/u/0/folders/179D_slEOLXWOTeFdmRrMkdV8C4DSLdYT?s=08" },
-            { "titre": "2- Microservices", "url": "https://drive.google.com/drive/u/0/folders/1p5jc-bYodKcfgLX8UcCf4krctg0xzoFg"},
+            { "titre": "2- Cybersecurity cnaps", "url": "https://github.com/paulveillard/cybersecurity-cnapp"},
             { "titre": "3- Cybersecurity project", "url": "https://github.com/CarterPerez-dev/Cybersecurity-Projects" }
           ]
         }
