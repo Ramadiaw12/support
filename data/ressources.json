@@ -113,7 +113,7 @@
             { "titre": "1 - Machine Learning", "url": "https://drive.google.com/drive/u/0/folders/1CgN7DE3pNRNh_4BA_zrrMLqWz6KquwuD" },
             { "titre": "2 - Prompt Engineering pour", "url": "https://github.com/jesseduffield/lazydocker" },
             { "titre": "3 - Security ops", "url": "https://github.com/aquasecurity/trivy" },
-            { "titre": "4- Gitleaks", "url": "https://github.com/gitleaks/gitleaks" }
+            { "titre": "4- Data Engineer", "url": "https://github.com/ozkary/Data-Engineering-Bootcamp" }
           ]
         }
       ]
@@ -128,7 +128,9 @@
             { "titre": "0- Everything for the cloud", "url": "https://drive.google.com/drive/u/0/folders/1_iB9UnsVlOWvdjKVmtC7b8b26L2ORdVR" },
             { "titre": "1- English ", "url": "https://drive.google.com/drive/u/0/folders/1UVI5yT-5JfMwyHHloxPwkuuPm08L_zBn" },
             { "titre": "2- Clouds Blueprints", "url": "https://github.com/ravikiranpagidi/alibaba-cloud-blueprints"},
-            { "titre": "3- Cloud Engineer", "url": "https://github.com/AhmedAlhusaini/AWS-Cloud-Practitioner-SelfStudy-Materials" }
+            { "titre": "3- Cloud Engineer", "url": "https://github.com/AhmedAlhusaini/AWS-Cloud-Practitioner-SelfStudy-Materials" },
+            { "titre": "4- AWS Infra", "url": "https://github.com/rusets/aws-multi-tier-infra"},
+            { "titre": "5- Google cloud", "url": "https://github.com/7twoduo/GCP-Runtime-Domain-Load-Balancer" }
 
           ]
         }
