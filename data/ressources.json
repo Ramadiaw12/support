@@ -93,7 +93,8 @@
             { "titre": "7- Kubernetes CLI", "url": "https://github.com/derailed/k9s" },
             { "titre": "8- Terraform", "url": "https://github.com/antonbabenko/terraform-best-practices" },
             { "titre" : "9- DevOps exercice", "url": "https://github.com/bregman-arie/devops-exercises"},
-            { "titre": "10- Support DevOps", "url": "https://drive.google.com/drive/u/0/folders/16kF3Xn2DXC0HQLwXi2fGD4YRaet4BrBu" }
+            { "titre": "10- Support DevOps", "url": "https://drive.google.com/drive/u/0/folders/16kF3Xn2DXC0HQLwXi2fGD4YRaet4BrBu" },
+            {"titre": "11- DevOps guide", "url": "https://github.com/mchittineni/ultimate-devops-guide" }
 
           ]
         }
@@ -126,7 +127,9 @@
           "liens":[
             { "titre": "0- Everything for the cloud", "url": "https://drive.google.com/drive/u/0/folders/1_iB9UnsVlOWvdjKVmtC7b8b26L2ORdVR" },
             { "titre": "1- English ", "url": "https://drive.google.com/drive/u/0/folders/1UVI5yT-5JfMwyHHloxPwkuuPm08L_zBn" },
-            { "titre": "2- Microservices", "url": "https://drive.google.com/drive/u/0/folders/1p5jc-bYodKcfgLX8UcCf4krctg0xzoFg"}
+            { "titre": "2- Microservices", "url": "https://drive.google.com/drive/u/0/folders/1p5jc-bYodKcfgLX8UcCf4krctg0xzoFg"},
+            { "titre": "3- Cloud Engineer", "url": "https://github.com/AhmedAlhusaini/AWS-Cloud-Practitioner-SelfStudy-Materials" }
+
           ]
         }
       ]
