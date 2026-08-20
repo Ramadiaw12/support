@@ -109,7 +109,7 @@
           "liens": [
             { "titre": "0 - AI Engineering Hub", "url": "https://github.com/patchy631/ai-engineering-hub" },
             { "titre": "1 - The data", "url": "https://drive.google.com/drive/u/0/folders/1CgN7DE3pNRNh_4BA_zrrMLqWz6KquwuD" },
-            { "titre": "1 - TP Configuration et Premier Pas", "url": "https://github.com/derailed/popeye" },
+            { "titre": "1 - Machine Learning", "url": "https://drive.google.com/drive/u/0/folders/1CgN7DE3pNRNh_4BA_zrrMLqWz6KquwuD" },
             { "titre": "2 - Prompt Engineering pour", "url": "https://github.com/jesseduffield/lazydocker" },
             { "titre": "3 - Security ops", "url": "https://github.com/aquasecurity/trivy" },
             { "titre": "4- Gitleaks", "url": "https://github.com/gitleaks/gitleaks" }
@@ -154,7 +154,7 @@
           "nom": "Cybersecurity books",
           "liens":[
             { "titre": "0- Books for cybersecurity", "url": "https://drive.google.com/drive/u/0/folders/1DqvFPxC3ROZgRndVYsfpX7C7Nqx1CnmL" },
-            { "titre": "1- English ", "url": "https://drive.google.com/drive/u/0/folders/1UVI5yT-5JfMwyHHloxPwkuuPm08L_zBn" },
+            { "titre": "1- Cybersecurity Docs ", "url": "https://drive.google.com/drive/u/0/folders/179D_slEOLXWOTeFdmRrMkdV8C4DSLdYT?s=08" },
             { "titre": "2- Microservices", "url": "https://drive.google.com/drive/u/0/folders/1p5jc-bYodKcfgLX8UcCf4krctg0xzoFg"}
           ]
         }
