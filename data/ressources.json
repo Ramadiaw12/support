@@ -91,7 +91,9 @@
             { "titre": "5- Infracost", "url": "https://github.com/infracost/infracost" },
             { "titre": "6- Tool for exploring a Docker", "url": "https://github.com/wagoodman/dive"},
             { "titre": "7- Kubernetes CLI", "url": "https://github.com/derailed/k9s" },
-            { "titre": "8-", "url": "" }
+            { "titre": "8- Terraform", "url": "https://github.com/antonbabenko/terraform-best-practices" },
+            { "titre" : "9- DevOps exercice", "url": "https://github.com/bregman-arie/devops-exercises"},
+            { "titre": "10- ", "url": "" }
 
           ]
         }
