@@ -120,8 +120,13 @@
             { "titre": "8- Tensorflow", "url": "https://github.com/tensorflow/tensorflow" },
             { "titre": "9- AutoGPT", "url": "https://github.com/Significant-Gravitas/AutoGPT" },
             { "titre": "10- Transformers", "url": "https://github.com/huggingface/transformers" },
-            { "titre": "11- Dify LLM ", "url": "https://github.com/langgenius/dify" },
-            { "titre": "11- Dify LLM ", "url": "https://github.com/langgenius/dify" }
+            { "titre": "12- Dify LLM ", "url": "https://github.com/langgenius/dify" },
+            { "titre": "13- Langchain ", "url": "https://github.com/langchain-ai/langchain" },
+            { "titre": "14- Llm Apps ", "url": "https://github.com/Shubhamsaboo/awesome-llm-apps" },
+            { "titre": "15- LLM from scratch", "url": "https://github.com/rasbt/LLMs-from-scratch" },
+            { "titre": "16- Pytorch ", "url": "https://github.com/pytorch/pytorch" },
+            { "titre": "17- Fastapi", "url": "https://github.com/fastapi/fastapi" },
+            { "titre": "18- PYTHON_PROJECTS", "url": "https://github.com/demon2202/PYTHON_PROJECTS" }
 
 
 
