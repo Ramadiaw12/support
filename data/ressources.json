@@ -129,7 +129,8 @@
             { "titre": "18- PYTHON_PROJECTS", "url": "https://github.com/demon2202/PYTHON_PROJECTS" },
             { "titre": "19- System prompting", "url": "https://github.com/elder-plinius/CL4R1T4S" },
             { "titre": "20- All for prompt engineering", "url": "https://github.com/topics/prompt-engineering" },
-            { "titre": "21- All for system prompting", "url": "https://github.com/topics/system-prompts" }
+            { "titre": "21- All for system prompting", "url": "https://github.com/topics/system-prompts" },
+            { "titre": "22- Learn Harness Engineering", "url": "https://github.com/walkinglabs/learn-harness-engineering" }
 
 
 
@@ -186,23 +187,23 @@
             { "titre": "4- Blue Team", "url":"https://github.com/keraattin/Blue-Team-Roadmap" },
             { "titre": "5- Cybersecurity Certifications", "url": "https://github.com/MichalSoltysikSOC/Certifications" },
             { "titre": "6- Goosint Cybersecurity Learning", "url": "https://github.com/khalil-b1/goosint-cybersecurity-learning" },
-            { "titre": "4- Book-of-secret-knowledge", "url":"https://github.com/trimstray/the-book-of-secret-knowledge" },
-            { "titre": "4- Awesome-Hacking", "url":"https://github.com/Hack-with-Github/Awesome-Hacking" },
-            { "titre": "4- PayloadsAllTheThings", "url":"https://github.com/swisskyrepo/PayloadsAllTheThings" },
-            { "titre": "4- hackingtool", "url":"https://github.com/Z4nzu/hackingtool" },
-            { "titre": "4- AI Agent for penetesting", "url":"https://github.com/usestrix/strix" },
-            { "titre": "4- Malware Analysis", "url":"https://github.com/x64dbg/x64dbg" },
-            { "titre": "4- Red Team", "url":"https://github.com/topics/red-team" },
-            { "titre": "4- Tools", "url":"https://github.com/topics/tools" },
-            { "titre": "4- Ethical Hacker", "url":"https://github.com/The-Art-of-Hacking/h4cker" },
-            { "titre": "4- OSINT", "url":"https://github.com/smicallef/spiderfoot" },
-            { "titre": "4- Hacking Ressources", "url":"https://github.com/vitalysim/Awesome-Hacking-Resources" },
-            { "titre": "4- Hacker Roadmap", "url":"https://github.com/sundowndev/hacker-roadmap" },
-            { "titre": "4- Tools to track", "url":"https://github.com/HunxByts/GhostTrack" },
-            { "titre": "4- All for pentesting", "url":"https://github.com/topics/pentesting" },
-            { "titre": "4- Projects repo", "url":"https://github.com/topics/project-repository" },
-            { "titre": "4- Cybersecure TOOLS", "url":"https://github.com/topics/cybersecurity-tools" },
-            { "titre": "4- Cybersecurity Analysis", "url":"https://github.com/topics/cybersecurity-analyst" },
+            { "titre": "7- Book-of-secret-knowledge", "url":"https://github.com/trimstray/the-book-of-secret-knowledge" },
+            { "titre": "8- Awesome-Hacking", "url":"https://github.com/Hack-with-Github/Awesome-Hacking" },
+            { "titre": "9- PayloadsAllTheThings", "url":"https://github.com/swisskyrepo/PayloadsAllTheThings" },
+            { "titre": "10- hackingtool", "url":"https://github.com/Z4nzu/hackingtool" },
+            { "titre": "11- AI Agent for penetesting", "url":"https://github.com/usestrix/strix" },
+            { "titre": "12- Malware Analysis", "url":"https://github.com/x64dbg/x64dbg" },
+            { "titre": "13- Red Team", "url":"https://github.com/topics/red-team" },
+            { "titre": "14- Tools", "url":"https://github.com/topics/tools" },
+            { "titre": "15- Ethical Hacker", "url":"https://github.com/The-Art-of-Hacking/h4cker" },
+            { "titre": "16- OSINT", "url":"https://github.com/smicallef/spiderfoot" },
+            { "titre": "17- Hacking Ressources", "url":"https://github.com/vitalysim/Awesome-Hacking-Resources" },
+            { "titre": "18- Hacker Roadmap", "url":"https://github.com/sundowndev/hacker-roadmap" },
+            { "titre": "19- Tools to track", "url":"https://github.com/HunxByts/GhostTrack" },
+            { "titre": "20- All for pentesting", "url":"https://github.com/topics/pentesting" },
+            { "titre": "21- Projects repo", "url":"https://github.com/topics/project-repository" },
+            { "titre": "22- Cybersecure TOOLS", "url":"https://github.com/topics/cybersecurity-tools" },
+            { "titre": "23- Cybersecurity Analysis", "url":"https://github.com/topics/cybersecurity-analyst" }
           ]
         }
       ]
