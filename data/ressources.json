@@ -102,18 +102,27 @@
     },
 
     {
-      "nom": "DevOps",
+      "nom": "AI Engineering",
       "sousCategories": [
         {
-          "nom": "Everything for DevOps",
+          "nom": "IA",
           "liens": [
-            { "titre": "0 - DevOps interviews", "url": "https://github.com/devops-interviews/devops-interview-questions" },
+            { "titre": "0 - AI Engineering Hub", "url": "https://github.com/patchy631/ai-engineering-hub" },
             { "titre": "1 - Typologie des Outils IA", "url": "https://github.com/bridgecrewio/checkov" },
             { "titre": "1 - TP Configuration et Premier Pas", "url": "https://github.com/derailed/popeye" },
             { "titre": "2 - Prompt Engineering pour", "url": "https://github.com/jesseduffield/lazydocker" },
             { "titre": "3 - Security ops", "url": "https://github.com/aquasecurity/trivy" },
             { "titre": "4- Gitleaks", "url": "https://github.com/gitleaks/gitleaks" }
           ]
+        }
+      ]
+    },
+
+    {
+      "nom": "Cloud",
+      "sousCategories":[
+        {
+          "nom": "CLoud computing",
         }
       ]
     }
