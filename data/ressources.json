@@ -126,7 +126,10 @@
             { "titre": "15- LLM from scratch", "url": "https://github.com/rasbt/LLMs-from-scratch" },
             { "titre": "16- Pytorch ", "url": "https://github.com/pytorch/pytorch" },
             { "titre": "17- Fastapi", "url": "https://github.com/fastapi/fastapi" },
-            { "titre": "18- PYTHON_PROJECTS", "url": "https://github.com/demon2202/PYTHON_PROJECTS" }
+            { "titre": "18- PYTHON_PROJECTS", "url": "https://github.com/demon2202/PYTHON_PROJECTS" },
+            { "titre": "19- System prompting", "url": "https://github.com/elder-plinius/CL4R1T4S" },
+            { "titre": "20- All for prompt engineering", "url": "https://github.com/topics/prompt-engineering" },
+            { "titre": "21- All for system prompting", "url": "https://github.com/topics/system-prompts" }
 
 
 
@@ -187,8 +190,8 @@
             { "titre": "4- Awesome-Hacking", "url":"https://github.com/Hack-with-Github/Awesome-Hacking" },
             { "titre": "4- PayloadsAllTheThings", "url":"https://github.com/swisskyrepo/PayloadsAllTheThings" },
             { "titre": "4- hackingtool", "url":"https://github.com/Z4nzu/hackingtool" },
-            { "titre": "4- Blue Team", "url":"https://github.com/keraattin/Blue-Team-Roadmap" },
-            { "titre": "4- Blue Team", "url":"https://github.com/keraattin/Blue-Team-Roadmap" },
+            { "titre": "4- AI Agent for penetesting", "url":"https://github.com/usestrix/strix" },
+            { "titre": "4- Malware Analysis", "url":"https://github.com/x64dbg/x64dbg" },
             { "titre": "4- Blue Team", "url":"https://github.com/keraattin/Blue-Team-Roadmap" },
             { "titre": "4- Blue Team", "url":"https://github.com/keraattin/Blue-Team-Roadmap" },
             { "titre": "4- Blue Team", "url":"https://github.com/keraattin/Blue-Team-Roadmap" },
