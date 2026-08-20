@@ -112,8 +112,21 @@
             { "titre": "1 - The data", "url": "https://drive.google.com/drive/u/0/folders/1CgN7DE3pNRNh_4BA_zrrMLqWz6KquwuD" },
             { "titre": "1 - Machine Learning", "url": "https://drive.google.com/drive/u/0/folders/1CgN7DE3pNRNh_4BA_zrrMLqWz6KquwuD" },
             { "titre": "2 - Prompt Engineering pour", "url": "https://github.com/jesseduffield/lazydocker" },
-            { "titre": "3 - Security ops", "url": "https://github.com/aquasecurity/trivy" },
-            { "titre": "4- Data Engineer", "url": "https://github.com/ozkary/Data-Engineering-Bootcamp" }
+            { "titre": "3 - The System Design Primer", "url": "https://github.com/donnemartin/system-design-primer" },
+            { "titre": "4- Data Engineer", "url": "https://github.com/ozkary/Data-Engineering-Bootcamp" },
+            { "titre": "5- Awesom Python", "url": "https://github.com/vinta/awesome-python" },
+            { "titre": "6- Project-based-learning", "url": "https://github.com/practical-tutorials/project-based-learning" },
+            { "titre": "7- All algorithms Python ", "url": "https://github.com/TheAlgorithms/Python" },
+            { "titre": "8- Tensorflow", "url": "https://github.com/tensorflow/tensorflow" },
+            { "titre": "9- AutoGPT", "url": "https://github.com/Significant-Gravitas/AutoGPT" },
+            { "titre": "10- Transformers", "url": "https://github.com/huggingface/transformers" },
+            { "titre": "11- Dify LLM ", "url": "https://github.com/langgenius/dify" },
+            { "titre": "11- Dify LLM ", "url": "https://github.com/langgenius/dify" }
+
+
+
+
+
           ]
         }
       ]
@@ -161,7 +174,10 @@
             { "titre": "0- Books for cybersecurity", "url": "https://drive.google.com/drive/u/0/folders/1DqvFPxC3ROZgRndVYsfpX7C7Nqx1CnmL" },
             { "titre": "1- Cybersecurity Docs ", "url": "https://drive.google.com/drive/u/0/folders/179D_slEOLXWOTeFdmRrMkdV8C4DSLdYT?s=08" },
             { "titre": "2- Cybersecurity cnaps", "url": "https://github.com/paulveillard/cybersecurity-cnapp"},
-            { "titre": "3- Cybersecurity project", "url": "https://github.com/CarterPerez-dev/Cybersecurity-Projects" }
+            { "titre": "3- Cybersecurity project", "url": "https://github.com/CarterPerez-dev/Cybersecurity-Projects" },
+            { "titre": "4- Blue Team", "url":"https://github.com/keraattin/Blue-Team-Roadmap" },
+            { "titre": "5- Cybersecurity Certifications", "url": "https://github.com/MichalSoltysikSOC/Certifications" },
+            { "titre": "6- Goosint Cybersecurity Learning", "url": "https://github.com/khalil-b1/goosint-cybersecurity-learning" }
           ]
         }
       ]
