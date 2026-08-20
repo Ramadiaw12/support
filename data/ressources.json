@@ -87,11 +87,35 @@
             { "titre": "1 - TP Configuration et Premier Pas", "url": "https://github.com/derailed/popeye" },
             { "titre": "2 - Prompt Engineering pour", "url": "https://github.com/jesseduffield/lazydocker" },
             { "titre": "3 - Security ops", "url": "https://github.com/aquasecurity/trivy" },
-            { "titre": "4- Gitleaks", "url": "https://github.com/gitleaks/gitleaks" }
+            { "titre": "4- Gitleaks", "url": "https://github.com/gitleaks/gitleaks" },
+            { "titre": "5- Infracost", "url": "https://github.com/infracost/infracost" },
+            { "titre": "6- Tool for exploring a Docker", "url": "https://github.com/wagoodman/dive"},
+            { "titre": "7- Kubernetes CLI", "url": "https://github.com/derailed/k9s" },
+            { "titre": "8-", "url": "" }
+
           ]
         }
         
       ]
+    },
+
+    {
+      "nom": "DevOps",
+      "sousCategories": [
+        {
+          "nom": "Everything for DevOps",
+          "liens": [
+            { "titre": "0 - DevOps interviews", "url": "https://github.com/devops-interviews/devops-interview-questions" },
+            { "titre": "1 - Typologie des Outils IA", "url": "https://github.com/bridgecrewio/checkov" },
+            { "titre": "1 - TP Configuration et Premier Pas", "url": "https://github.com/derailed/popeye" },
+            { "titre": "2 - Prompt Engineering pour", "url": "https://github.com/jesseduffield/lazydocker" },
+            { "titre": "3 - Security ops", "url": "https://github.com/aquasecurity/trivy" },
+            { "titre": "4- Gitleaks", "url": "https://github.com/gitleaks/gitleaks" }
+          ]
+        }
+      ]
     }
+
+    
   ]
 }
