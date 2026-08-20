@@ -93,7 +93,7 @@
             { "titre": "7- Kubernetes CLI", "url": "https://github.com/derailed/k9s" },
             { "titre": "8- Terraform", "url": "https://github.com/antonbabenko/terraform-best-practices" },
             { "titre" : "9- DevOps exercice", "url": "https://github.com/bregman-arie/devops-exercises"},
-            { "titre": "10- ", "url": "" }
+            { "titre": "10- Support DevOps", "url": "https://drive.google.com/drive/u/0/folders/16kF3Xn2DXC0HQLwXi2fGD4YRaet4BrBu" }
 
           ]
         }
@@ -108,7 +108,7 @@
           "nom": "IA",
           "liens": [
             { "titre": "0 - AI Engineering Hub", "url": "https://github.com/patchy631/ai-engineering-hub" },
-            { "titre": "1 - Typologie des Outils IA", "url": "https://github.com/bridgecrewio/checkov" },
+            { "titre": "1 - The data", "url": "https://drive.google.com/drive/u/0/folders/1CgN7DE3pNRNh_4BA_zrrMLqWz6KquwuD" },
             { "titre": "1 - TP Configuration et Premier Pas", "url": "https://github.com/derailed/popeye" },
             { "titre": "2 - Prompt Engineering pour", "url": "https://github.com/jesseduffield/lazydocker" },
             { "titre": "3 - Security ops", "url": "https://github.com/aquasecurity/trivy" },
@@ -123,6 +123,10 @@
       "sousCategories":[
         {
           "nom": "CLoud computing",
+          "liens":[
+            { "titre": "0- Everything for the cloud", "url": "https://drive.google.com/drive/u/0/folders/1_iB9UnsVlOWvdjKVmtC7b8b26L2ORdVR" },
+            { "titre": "1- English ", "url": "https://drive.google.com/drive/u/0/folders/1UVI5yT-5JfMwyHHloxPwkuuPm08L_zBn" }
+          ]
         }
       ]
     }
