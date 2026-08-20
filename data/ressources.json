@@ -125,7 +125,37 @@
           "nom": "CLoud computing",
           "liens":[
             { "titre": "0- Everything for the cloud", "url": "https://drive.google.com/drive/u/0/folders/1_iB9UnsVlOWvdjKVmtC7b8b26L2ORdVR" },
-            { "titre": "1- English ", "url": "https://drive.google.com/drive/u/0/folders/1UVI5yT-5JfMwyHHloxPwkuuPm08L_zBn" }
+            { "titre": "1- English ", "url": "https://drive.google.com/drive/u/0/folders/1UVI5yT-5JfMwyHHloxPwkuuPm08L_zBn" },
+            { "titre": "2- Microservices", "url": "https://drive.google.com/drive/u/0/folders/1p5jc-bYodKcfgLX8UcCf4krctg0xzoFg"}
+          ]
+        }
+      ]
+    },
+
+
+    {
+      "nom": "Design",
+      "sousCategories":[
+        {
+          "nom": "UX Design",
+          "liens":[
+            { "titre": "0- Complete pack", "url": "https://drive.google.com/drive/u/0/folders/1yOsIliKsgRoEzThwoBa9ni25b0-cFbc7" },
+            { "titre": "1- English ", "url": "https://drive.google.com/drive/u/0/folders/1UVI5yT-5JfMwyHHloxPwkuuPm08L_zBn" },
+            { "titre": "2- Microservices", "url": "https://drive.google.com/drive/u/0/folders/1p5jc-bYodKcfgLX8UcCf4krctg0xzoFg"}
+          ]
+        }
+      ]
+    },
+
+    {
+      "nom": "CyberSecurity",
+      "sousCategories":[
+        {
+          "nom": "Cybersecurity books",
+          "liens":[
+            { "titre": "0- Books for cybersecurity", "url": "https://drive.google.com/drive/u/0/folders/1DqvFPxC3ROZgRndVYsfpX7C7Nqx1CnmL" },
+            { "titre": "1- English ", "url": "https://drive.google.com/drive/u/0/folders/1UVI5yT-5JfMwyHHloxPwkuuPm08L_zBn" },
+            { "titre": "2- Microservices", "url": "https://drive.google.com/drive/u/0/folders/1p5jc-bYodKcfgLX8UcCf4krctg0xzoFg"}
           ]
         }
       ]
