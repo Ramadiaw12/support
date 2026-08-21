@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let linkCount = 0;
   let categoryCount = 0;
 
-  // ===== MENU BURGER (mobile) =====
+  //  MENU BURGER (mobile) 
   function openSidebar() {
     if (!sidebar) return;
     sidebar.classList.add('open');
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return categoryIcons.default;
   }
 
-  // ===== Domaines qui interdisent l'affichage en iframe =====
+  //  Domaines qui interdisent l'affichage en iframe 
   // (GitHub, Drive et beaucoup d'autres envoient X-Frame-Options / CSP
   // frame-ancestors qui bloque silencieusement l'iframe — elle reste vide,
   // donnant l'impression que le lien "n'apparaît pas")
