@@ -8,51 +8,8 @@
           "liens": [
             { "titre": "Prise en main de l'environnement", "url": "https://example.com/intro" }
           ]
-        },
-        {
-          "nom": "Docker",
-          "liens": [
-            { "titre": "Docker Desktop", "url": "https://www.docker.com/products/docker-desktop/" },
-            { "titre": "Docker Documentation", "url": "https://docs.docker.com/" }
-          ]
-        },
-        {
-          "nom": "Linux",
-          "liens": [
-            { "titre": "Commandes Linux essentielles", "url": "https://example.com/linux-commands" }
-          ]
-        },
-        {
-          "nom": "Git et Gitlab",
-          "liens": [
-            { "titre": "Git Documentation", "url": "https://git-scm.com/doc" },
-            { "titre": "GitLab", "url": "https://about.gitlab.com/" }
-          ]
-        },
-        {
-          "nom": "Python",
-          "liens": [
-            { "titre": "Python Documentation", "url": "https://docs.python.org/" }
-          ]
-        },
-        {
-          "nom": "Kubernetes",
-          "liens": [
-            { "titre": "Kubernetes Documentation", "url": "https://kubernetes.io/docs/" }
-          ]
-        },
-        {
-          "nom": "Ansible",
-          "liens": [
-            { "titre": "Ansible Documentation", "url": "https://docs.ansible.com/" }
-          ]
-        },
-        {
-          "nom": "Suite Elastic",
-          "liens": [
-            { "titre": "Elastic Stack", "url": "https://www.elastic.co/what-is/elk-stack" }
-          ]
         }
+
       ]
     },
     {
