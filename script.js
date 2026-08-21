@@ -8,9 +8,51 @@ document.addEventListener('DOMContentLoaded', () => {
   const totalCategories = document.getElementById('total-categories');
   const totalLinks = document.getElementById('total-links');
 
+  // Éléments du menu burger (mobile)
+  const sidebar = document.querySelector('.sidebar');
+  const sidebarToggle = document.getElementById('sidebarToggle');
+  const sidebarOverlay = document.getElementById('sidebarOverlay');
+
   let allData = null;
   let linkCount = 0;
   let categoryCount = 0;
+
+  // ===== MENU BURGER (mobile) =====
+  function openSidebar() {
+    if (!sidebar) return;
+    sidebar.classList.add('open');
+    sidebarToggle?.classList.add('active');
+    sidebarOverlay?.classList.add('active');
+    sidebarToggle?.setAttribute('aria-label', 'Fermer le menu');
+  }
+
+  function closeSidebar() {
+    if (!sidebar) return;
+    sidebar.classList.remove('open');
+    sidebarToggle?.classList.remove('active');
+    sidebarOverlay?.classList.remove('active');
+    sidebarToggle?.setAttribute('aria-label', 'Ouvrir le menu');
+  }
+
+  if (sidebarToggle) {
+    sidebarToggle.addEventListener('click', () => {
+      sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+    });
+  }
+
+  if (sidebarOverlay) {
+    sidebarOverlay.addEventListener('click', closeSidebar);
+  }
+
+  // Ferme le menu avec la touche Échap
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeSidebar();
+  });
+
+  // Ferme le menu si on repasse en desktop
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) closeSidebar();
+  });
 
   // Mapping des icônes
   const categoryIcons = {
@@ -39,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   function getIconForCategory(categoryName) {
-    for (let [key, icon] of Object.entries(categoryIcons)) {
+    for (const [key, icon] of Object.entries(categoryIcons)) {
       if (categoryName.toLowerCase().includes(key.toLowerCase())) {
         return icon;
       }
@@ -47,20 +89,71 @@ document.addEventListener('DOMContentLoaded', () => {
     return categoryIcons.default;
   }
 
+  // ===== Domaines qui interdisent l'affichage en iframe =====
+  // (GitHub, Drive et beaucoup d'autres envoient X-Frame-Options / CSP
+  // frame-ancestors qui bloque silencieusement l'iframe — elle reste vide,
+  // donnant l'impression que le lien "n'apparaît pas")
+  const NON_EMBEDDABLE_DOMAINS = [
+    'github.com',
+    'gist.github.com',
+    'drive.google.com',
+    'docs.google.com',
+    'notion.so',
+    'www.notion.so',
+    'figma.com',
+    'www.figma.com',
+    'linkedin.com',
+    'twitter.com',
+    'x.com',
+    'stackoverflow.com'
+  ];
+
+  function getDomainInfo(url) {
+    try {
+      const hostname = new URL(url).hostname.replace(/^www\./, '');
+      const blocked = NON_EMBEDDABLE_DOMAINS.some(d =>
+        hostname === d.replace(/^www\./, '') || hostname.endsWith('.' + d.replace(/^www\./, ''))
+      );
+      return { hostname, blocked };
+    } catch {
+      return { hostname: url, blocked: false };
+    }
+  }
+
+  // Convertit certains liens Google Drive en version "preview" embarquable
+  function toEmbeddableUrl(url) {
+    const driveMatch = url.match(/drive\.google\.com\/file\/d\/([^/]+)/);
+    if (driveMatch) {
+      return `https://drive.google.com/file/d/${driveMatch[1]}/preview`;
+    }
+    return url;
+  }
+
+  function domainIconClass(hostname) {
+    if (hostname.includes('github')) return 'fa-brands fa-github';
+    if (hostname.includes('drive.google') || hostname.includes('docs.google')) return 'fa-brands fa-google-drive';
+    if (hostname.includes('notion')) return 'fa-solid fa-file-lines';
+    if (hostname.includes('figma')) return 'fa-brands fa-figma';
+    if (hostname.includes('linkedin')) return 'fa-brands fa-linkedin';
+    if (hostname.includes('stackoverflow')) return 'fa-brands fa-stack-overflow';
+    return 'fa-solid fa-arrow-up-right-from-square';
+  }
+
   // Charger le fichier JSON
   fetch('data/ressources.json')
     .then(res => res.json())
     .then(data => {
       allData = data;
-      // Compter les éléments
-      data.categories.forEach(cat => {
-        categoryCount++;
-        cat.sousCategories.forEach(sub => {
-          linkCount += sub.liens.length;
-        });
-      });
-      totalCategories.textContent = categoryCount;
-      totalLinks.textContent = linkCount;
+      categoryCount = data.categories.length;
+      linkCount = data.categories.reduce(
+        (total, cat) => total + cat.sousCategories.reduce(
+          (subTotal, sub) => subTotal + sub.liens.length, 0
+        ), 0
+      );
+
+      if (totalCategories) totalCategories.textContent = categoryCount;
+      if (totalLinks) totalLinks.textContent = linkCount;
+
       buildTree(data);
     })
     .catch(err => {
@@ -68,9 +161,16 @@ document.addEventListener('DOMContentLoaded', () => {
       console.error(err);
     });
 
+  function selectLink(linkEl) {
+    document.querySelectorAll('.link-item').forEach(el => el.classList.remove('active'));
+    linkEl.classList.add('active');
+    // Sur mobile, refermer le menu après sélection
+    if (window.innerWidth <= 768) closeSidebar();
+  }
+
   function buildTree(data) {
     treeContainer.innerHTML = '';
-    
+
     data.categories.forEach((cat, catIndex) => {
       const catDiv = document.createElement('div');
       catDiv.className = 'category';
@@ -78,27 +178,30 @@ document.addEventListener('DOMContentLoaded', () => {
       // En-tête de catégorie
       const header = document.createElement('div');
       header.className = 'category-header';
-      
+      header.setAttribute('tabindex', '0');
+      header.setAttribute('role', 'button');
+      header.setAttribute('aria-expanded', 'false');
+
       const icon = document.createElement('i');
       icon.className = getIconForCategory(cat.nom);
       icon.style.cssText = 'font-size: 1rem; width: 24px; color: #495057;';
-      
+
       const name = document.createElement('span');
       name.className = 'category-name';
       name.textContent = cat.nom;
-      
+
       const toggle = document.createElement('span');
       toggle.className = 'category-toggle';
       toggle.innerHTML = '▶';
-      
+
       header.appendChild(icon);
       header.appendChild(name);
       header.appendChild(toggle);
-      
+
       // Contenu
       const content = document.createElement('div');
       content.className = 'category-content';
-      
+
       cat.sousCategories.forEach(sub => {
         const subDiv = document.createElement('div');
         subDiv.className = 'subcategory';
@@ -112,53 +215,70 @@ document.addEventListener('DOMContentLoaded', () => {
           const linkEl = document.createElement('a');
           linkEl.className = 'link-item';
           linkEl.textContent = lien.titre;
+          linkEl.href = '#';
           linkEl.dataset.url = lien.url;
           linkEl.dataset.titre = lien.titre;
           linkEl.dataset.category = cat.nom;
           linkEl.dataset.subcategory = sub.nom;
           linkEl.dataset.isIntro = lien.isIntro || false;
-          linkEl.dataset.content = lien.content || '';
 
           linkEl.addEventListener('click', (e) => {
             e.preventDefault();
-            
-            // Si c'est la page d'introduction
+
+            // Page d'introduction
             if (linkEl.dataset.isIntro === 'true') {
               pageTitle.textContent = "Introduction";
               pageSubtitle.textContent = "Bienvenue sur ma plateforme";
               breadcrumbPath.textContent = "Environnement de travail › Introduction";
-              
-              // Afficher le contenu personnalisé
-              const contentHtml = linkEl.dataset.content || '<p>Contenu non disponible</p>';
+
+              const contentHtml = lien.content || '<p>Contenu non disponible</p>';
               contentDisplay.innerHTML = `
                 <div class="content-display-content">
                   ${contentHtml}
                 </div>
               `;
-              
-              document.querySelectorAll('.link-item').forEach(el => el.classList.remove('active'));
-              linkEl.classList.add('active');
+
+              selectLink(linkEl);
               return;
             }
 
-            // Mettre à jour le panneau droit pour les liens normaux
+            // Lien normal
             pageTitle.textContent = lien.titre;
             pageSubtitle.textContent = `${cat.nom} › ${sub.nom}`;
             breadcrumbPath.textContent = `Uptime Formation › ${cat.nom}`;
-            
-            contentDisplay.innerHTML = `
-              <div class="content-display-content">
-                <iframe src="${lien.url}" loading="lazy" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
-                <div class="link-actions">
-                  <a href="${lien.url}" target="_blank">
-                    <i class="fas fa-external-link-alt"></i> Ouvrir dans un nouvel onglet
-                  </a>
-                </div>
-              </div>
-            `;
 
-            document.querySelectorAll('.link-item').forEach(el => el.classList.remove('active'));
-            linkEl.classList.add('active');
+            const { hostname, blocked } = getDomainInfo(lien.url);
+
+            if (blocked) {
+              // Le site refuse l'affichage en iframe (GitHub, LinkedIn, etc.)
+              // → carte de secours propre plutôt qu'un cadre vide
+              contentDisplay.innerHTML = `
+                <div class="content-display-content">
+                  <div class="external-link-card">
+                    <i class="${domainIconClass(hostname)} external-link-card-icon"></i>
+                    <h3>${lien.titre}</h3>
+                    <p>${hostname} ne permet pas l'aperçu intégré pour des raisons de sécurité.</p>
+                    <a class="external-link-card-btn" href="${lien.url}" target="_blank" rel="noopener noreferrer">
+                      <i class="fas fa-external-link-alt"></i> Ouvrir ${hostname}
+                    </a>
+                  </div>
+                </div>
+              `;
+            } else {
+              const embedUrl = toEmbeddableUrl(lien.url);
+              contentDisplay.innerHTML = `
+                <div class="content-display-content">
+                  <iframe src="${embedUrl}" loading="lazy" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+                  <div class="link-actions">
+                    <a href="${lien.url}" target="_blank" rel="noopener noreferrer">
+                      <i class="fas fa-external-link-alt"></i> Ouvrir dans un nouvel onglet
+                    </a>
+                  </div>
+                </div>
+              `;
+            }
+
+            selectLink(linkEl);
           });
 
           subDiv.appendChild(linkEl);
@@ -168,18 +288,25 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       // Gestion accordéon
-      let isOpen = false;
-      header.addEventListener('click', () => {
-        isOpen = !isOpen;
-        content.classList.toggle('open', isOpen);
+      function toggleCategory() {
+        const isOpen = content.classList.toggle('open');
         toggle.classList.toggle('rotated', isOpen);
+        header.setAttribute('aria-expanded', String(isOpen));
+      }
+
+      header.addEventListener('click', toggleCategory);
+      header.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggleCategory();
+        }
       });
 
       // Ouvrir la première catégorie par défaut
       if (catIndex === 0) {
-        isOpen = true;
         content.classList.add('open');
         toggle.classList.add('rotated');
+        header.setAttribute('aria-expanded', 'true');
       }
 
       catDiv.appendChild(header);
@@ -195,7 +322,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (query === '') {
       buildTree(allData);
-      // Réouvrir la première catégorie
       const firstContent = document.querySelector('.category-content');
       const firstToggle = document.querySelector('.category-toggle');
       if (firstContent) {
@@ -225,50 +351,9 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     buildTree(filtered);
-    
-    // Ouvrir toutes les catégories lors de la recherche
-    document.querySelectorAll('.category-content').forEach(el => {
-      el.classList.add('open');
-    });
-    document.querySelectorAll('.category-toggle').forEach(el => {
-      el.classList.add('rotated');
-    });
+
+    document.querySelectorAll('.category-content').forEach(el => el.classList.add('open'));
+    document.querySelectorAll('.category-toggle').forEach(el => el.classList.add('rotated'));
+    document.querySelectorAll('.category-header').forEach(el => el.setAttribute('aria-expanded', 'true'));
   });
 });
-
-
- const sidebar = document.querySelector('.sidebar');
-  const toggle = document.getElementById('sidebarToggle');
-  const overlay = document.getElementById('sidebarOverlay');
-
-  function openSidebar() {
-    sidebar.classList.add('open');
-    toggle.classList.add('active');
-    overlay.classList.add('active');
-    toggle.setAttribute('aria-label', 'Fermer le menu');
-  }
-
-  function closeSidebar() {
-    sidebar.classList.remove('open');
-    toggle.classList.remove('active');
-    overlay.classList.remove('active');
-    toggle.setAttribute('aria-label', 'Ouvrir le menu');
-  }
-
-  toggle.addEventListener('click', () => {
-    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
-  });
-
-  overlay.addEventListener('click', closeSidebar);
-
-  // Ferme le menu automatiquement quand on clique un lien
-  document.querySelectorAll('.link-item').forEach(link => {
-    link.addEventListener('click', () => {
-      if (window.innerWidth <= 768) closeSidebar();
-    });
-  });
-
-  // Ferme le menu si on repasse en desktop
-  window.addEventListener('resize', () => {
-    if (window.innerWidth > 768) closeSidebar();
-  });
