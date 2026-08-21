@@ -14,13 +14,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Mapping des icônes
   const categoryIcons = {
+    "Environnement de travail": "fa-solid fa-laptop-code",
+    "IA pour les devs": "fa-solid fa-brain",
     "DevOps": "fa-solid fa-server",
     "Data": "fa-solid fa-database",
     "Langages": "fa-solid fa-code",
     "Cloud": "fa-solid fa-cloud",
     "Sécurité": "fa-solid fa-shield-halved",
     "Réseaux": "fa-solid fa-network-wired",
-    "IA": "fa-solid fa-brain",
     "Web": "fa-solid fa-globe",
     "Mobile": "fa-solid fa-mobile-screen",
     "Bases de données": "fa-solid fa-table",
@@ -34,9 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
     "Python": "fa-brands fa-python",
     "JavaScript": "fa-brands fa-js",
     "Java": "fa-brands fa-java",
-    "Environnement de travail": "fa-solid fa-laptop-code",
-    "Fondamentaux": "fa-solid fa-book-open",
-    "Avancé": "fa-solid fa-rocket",
     "default": "fa-solid fa-folder"
   };
 
@@ -118,24 +116,45 @@ document.addEventListener('DOMContentLoaded', () => {
           linkEl.dataset.titre = lien.titre;
           linkEl.dataset.category = cat.nom;
           linkEl.dataset.subcategory = sub.nom;
+          linkEl.dataset.isIntro = lien.isIntro || false;
+          linkEl.dataset.content = lien.content || '';
 
           linkEl.addEventListener('click', (e) => {
             e.preventDefault();
             
-            // Mettre à jour le panneau droit
+            // Si c'est la page d'introduction
+            if (linkEl.dataset.isIntro === 'true') {
+              pageTitle.textContent = "Introduction";
+              pageSubtitle.textContent = "Bienvenue sur ma plateforme";
+              breadcrumbPath.textContent = "Environnement de travail › Introduction";
+              
+              // Afficher le contenu personnalisé
+              const contentHtml = linkEl.dataset.content || '<p>Contenu non disponible</p>';
+              contentDisplay.innerHTML = `
+                <div class="content-display-content">
+                  ${contentHtml}
+                </div>
+              `;
+              
+              document.querySelectorAll('.link-item').forEach(el => el.classList.remove('active'));
+              linkEl.classList.add('active');
+              return;
+            }
+
+            // Mettre à jour le panneau droit pour les liens normaux
             pageTitle.textContent = lien.titre;
             pageSubtitle.textContent = `${cat.nom} › ${sub.nom}`;
             breadcrumbPath.textContent = `Uptime Formation › ${cat.nom}`;
             
             contentDisplay.innerHTML = `
               <div class="content-display-content">
-                    <iframe src="/proxy?url=${encodeURIComponent(lien.url)}" loading="lazy" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
-                    <div class="link-actions">
-                    <a href="${lien.url}" target="_blank">
-                        <i class="fas fa-external-link-alt"></i> Ouvrir dans un nouvel onglet
-                    </a>
-                    </div>
+                <iframe src="${lien.url}" loading="lazy" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+                <div class="link-actions">
+                  <a href="${lien.url}" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> Ouvrir dans un nouvel onglet
+                  </a>
                 </div>
+              </div>
             `;
 
             document.querySelectorAll('.link-item').forEach(el => el.classList.remove('active'));

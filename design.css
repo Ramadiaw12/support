@@ -453,3 +453,86 @@ button:focus-visible,
     gap: 20px;
   }
 }
+
+
+/* ===== PAGE D'INTRODUCTION ===== */
+.intro-page {
+  padding: 20px 10px;
+  animation: fadeIn 0.5s ease;
+}
+
+.intro-page h1 {
+  font-size: 2rem;
+  color: #1a1a2e;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.intro-page p {
+  font-size: 1.05rem;
+  color: #495057;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.intro-page strong {
+  color: #e67e22;
+}
+
+.intro-objectives {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin: 24px 0;
+  border-left: 4px solid #e67e22;
+}
+
+.intro-objectives h2 {
+  font-size: 1.2rem;
+  color: #1a1a2e;
+  margin-bottom: 12px;
+}
+
+.intro-objectives ul {
+  list-style: none;
+  padding: 0;
+}
+
+.intro-objectives ul li {
+  padding: 6px 0;
+  color: #495057;
+  font-size: 0.95rem;
+}
+
+.intro-objectives ul li::before {
+  content: "▸ ";
+  color: #e67e22;
+  font-weight: bold;
+}
+
+.intro-quote {
+  background: linear-gradient(135deg, #2d3436 0%, #1a1a2e 100%);
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.intro-quote blockquote {
+  color: white;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

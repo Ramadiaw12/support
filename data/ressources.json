@@ -6,7 +6,12 @@
         {
           "nom": "Introduction",
           "liens": [
-            { "titre": "Prise en main de l'environnement", "url": "https://example.com/intro" }
+            { 
+              "titre": "👋 Bienvenue sur ma plateforme", 
+              "url": "#intro",
+              "isIntro": true,
+              "content": "<div class='intro-page'><h1>Bienvenue sur ma Plateforme de Ressources</h1><p>Cette plateforme est mon <strong>espace personnel</strong> où je centralise toutes les ressources informatique que j'utilise au quotidien.</p><div class='intro-objectives'><h2>🎯 Mon Objectif</h2><ul><li>📚 Centraliser toutes mes ressources de formation</li><li>💻 Avoir un accès rapide aux documentations importantes</li><li>🤖 Suivre mon apprentissage en IA et développement</li><li>🔧 Garder une trace des bonnes pratiques DevOps</li></ul></div><div class='intro-quote'><blockquote>'La connaissance s'enrichit quand elle est partagée et bien organisée'</blockquote></div></div>"
+            }
           ]
         }
 
