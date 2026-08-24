@@ -139,7 +139,7 @@
     },
 
     {
-      "nom": "CyberSecurity",
+      "nom": "Sécurité",
       "sousCategories":[
         {
           "nom": "Cybersecurity books",
@@ -176,7 +176,7 @@
 
 
   {
-    "nom": "Engineering",
+    "nom": "default",
     "sousCategories": [
       {
         "nom": "Liens utiles",
