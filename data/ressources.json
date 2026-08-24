@@ -37,7 +37,8 @@
             { "titre": "8- Terraform", "url": "https://github.com/antonbabenko/terraform-best-practices" },
             { "titre" : "9- DevOps exercice", "url": "https://github.com/bregman-arie/devops-exercises"},
             { "titre": "10- Support DevOps", "url": "https://drive.google.com/drive/u/0/folders/16kF3Xn2DXC0HQLwXi2fGD4YRaet4BrBu" },
-            {"titre": "11- DevOps guide", "url": "https://github.com/mchittineni/ultimate-devops-guide" }
+            {"titre": "11- DevOps guide", "url": "https://github.com/mchittineni/ultimate-devops-guide" },
+            { "titre": "12- DevOps Interview Questions & Answers", "url": "https://github.com/NotHarshhaa/DevOps-Interview-Questions" }
 
           ]
         }
@@ -168,7 +169,8 @@
         "liens": [
           { "titre": "0- Best System Design Resources", "url": "https://github.com/javabuddy/best-system-design-resources" },
           { "titre": "1- System design academie", "url": "https://github.com/systemdesign42/system-design-academy" },
-          { "titre": "2- System Design notes", "url": "https://github.com/liquidslr/system-design-notes" }
+          { "titre": "2- System Design notes", "url": "https://github.com/liquidslr/system-design-notes" },
+          { "titre": "3- The System Design Primer", "url": "https://github.com/donnemartin/system-design-primer" }
         ]
       }
 
@@ -181,7 +183,8 @@
       {
         "nom": "Support for Lunix",
         "liens": [
-          { "titre": "0- SSH Complete Course", "url": "https://pro.tecmint.com/ssh-complete-course/" }
+          { "titre": "0- SSH Complete Course", "url": "https://pro.tecmint.com/ssh-complete-course/" },
+          { "titre": "2- Linux System Administrator", "url": "https://github.com/chassing/linux-sysadmin-interview-questions" }
         ]
       }
       
