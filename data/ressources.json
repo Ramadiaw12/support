@@ -17,26 +17,7 @@
 
       ]
     },
-    {
-      "nom": "IA pour les devs",
-      "sousCategories": [
-        {
-          "nom": "Jour 1 - Fondamentaux",
-          "liens": [
-            { "titre": "0 - Lexique", "url": "https://example.com/ia-lexique" },
-            { "titre": "1 - Typologie des Outils IA", "url": "https://example.com/ia-typologie" },
-            { "titre": "1 - TP Configuration et Premier Pas", "url": "https://example.com/ia-tp1" },
-            { "titre": "2 - Prompt Engineering pour", "url": "https://example.com/ia-prompt" }
-          ]
-        },
-        {
-          "nom": "Jour 2 - Avancé",
-          "liens": [
-            { "titre": "1 - Modèles avancés", "url": "https://example.com/ia-avance" }
-          ]
-        }
-      ]
-    },
+    
     
     {
       "nom": "DevOps",
@@ -65,7 +46,7 @@
     },
 
     {
-      "nom": "AI Engineering",
+      "nom": "IA pour les devs",
       "sousCategories": [
         {
           "nom": "IA",
