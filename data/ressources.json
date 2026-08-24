@@ -97,7 +97,10 @@
             { "titre": "2- Clouds Blueprints", "url": "https://github.com/ravikiranpagidi/alibaba-cloud-blueprints"},
             { "titre": "3- Cloud Engineer", "url": "https://github.com/AhmedAlhusaini/AWS-Cloud-Practitioner-SelfStudy-Materials" },
             { "titre": "4- AWS Infra", "url": "https://github.com/rusets/aws-multi-tier-infra"},
-            { "titre": "5- Google cloud", "url": "https://github.com/7twoduo/GCP-Runtime-Domain-Load-Balancer" }
+            { "titre": "5- Google cloud", "url": "https://github.com/7twoduo/GCP-Runtime-Domain-Load-Balancer" },
+            { "titre": "6- AWS Networking", "url": "https://thetechfusionist.com/2024/02/29/aws-networking-quick-projects-ideas/" },
+            { "titre": "3- Terraform + Azure: 7 bite size projects", "url": "https://thetechfusionist.com/2024/02/19/terraform-azure-7-bite-size-projects/" }
+
 
           ]
         }
@@ -165,8 +168,7 @@
         "liens": [
           { "titre": "0- Best System Design Resources", "url": "https://github.com/javabuddy/best-system-design-resources" },
           { "titre": "1- System design academie", "url": "https://github.com/systemdesign42/system-design-academy" },
-          { "titre": "2- System Design notes", "url": "https://github.com/liquidslr/system-design-notes" },
-          { "titre": "3- Master Cloud, DevOps & AI", "url": "https://thetechfusionist.com/2024/02/19/terraform-azure-7-bite-size-projects/" }
+          { "titre": "2- System Design notes", "url": "https://github.com/liquidslr/system-design-notes" }
         ]
       }
 
