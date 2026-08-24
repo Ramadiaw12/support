@@ -163,8 +163,9 @@
       {
         "nom": "Liens utiles",
         "liens": [
-          { "titre": "1- Best System Design Resources", "url": "https://github.com/javabuddy/best-system-design-resources" },
-          { "titre": "2- SYstel design academie", "url": "https://github.com/systemdesign42/system-design-academy" }
+          { "titre": "0- Best System Design Resources", "url": "https://github.com/javabuddy/best-system-design-resources" },
+          { "titre": "1- System design academie", "url": "https://github.com/systemdesign42/system-design-academy" },
+          { "titre": "2- System Design notes", "url": "https://github.com/liquidslr/system-design-notes" }
         ]
       }
 
@@ -177,7 +178,7 @@
       {
         "nom": "Support for Lunix",
         "liens": [
-          { "titre": "1- SSH Complete Course", "url": "https://pro.tecmint.com/ssh-complete-course/" }
+          { "titre": "0- SSH Complete Course", "url": "https://pro.tecmint.com/ssh-complete-course/" }
         ]
       }
       
