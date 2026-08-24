@@ -89,10 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return categoryIcons.default;
   }
 
-  //  Domaines qui interdisent l'affichage en iframe 
-  // (GitHub, Drive et beaucoup d'autres envoient X-Frame-Options / CSP
-  // frame-ancestors qui bloque silencieusement l'iframe — elle reste vide,
-  // donnant l'impression que le lien "n'apparaît pas")
+ 
   const NON_EMBEDDABLE_DOMAINS = [
     'github.com',
     'gist.github.com',
@@ -251,7 +248,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (blocked) {
               // Le site refuse l'affichage en iframe (GitHub, LinkedIn, etc.)
-              // → carte de secours propre plutôt qu'un cadre vide
               contentDisplay.innerHTML = `
                 <div class="content-display-content">
                   <div class="external-link-card">
