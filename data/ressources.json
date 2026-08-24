@@ -149,7 +149,8 @@
             { "titre": "21- Projects repo", "url":"https://github.com/topics/project-repository" },
             { "titre": "22- Cybersecure TOOLS", "url":"https://github.com/topics/cybersecurity-tools" },
             { "titre": "23- Cybersecurity Analysis", "url":"https://github.com/topics/cybersecurity-analyst" },
-            { "titre": "24- OSINT ARSENAL", "url": "https://github.com/rawfilejson/awesome-osint-arsenal" }
+            { "titre": "24- OSINT ARSENAL", "url": "https://github.com/rawfilejson/awesome-osint-arsenal" },
+            { "titre": "25- ESP32 Bit Pirate", "url": "https://github.com/geo-tp/ESP32-Bit-Pirate" }
           ]
         }
       ]
@@ -162,7 +163,8 @@
       {
         "nom": "Liens utiles",
         "liens": [
-          { "titre": "1- Best System Design Resources", "url": "https://github.com/javabuddy/best-system-design-resources" }
+          { "titre": "1- Best System Design Resources", "url": "https://github.com/javabuddy/best-system-design-resources" },
+          { "titre": "2- SYstel design academie", "url": "https://github.com/systemdesign42/system-design-academy" }
         ]
       }
 
