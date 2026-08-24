@@ -184,7 +184,8 @@
         "nom": "Support for Lunix",
         "liens": [
           { "titre": "0- SSH Complete Course", "url": "https://pro.tecmint.com/ssh-complete-course/" },
-          { "titre": "2- Linux System Administrator", "url": "https://github.com/chassing/linux-sysadmin-interview-questions" }
+          { "titre": "1- Linux System Administrator", "url": "https://github.com/chassing/linux-sysadmin-interview-questions" },
+          { "titre": "2- Important Kubernetes Interview", "url": "https://github.com/Devinterview-io/kubernetes-interview-questions" }
         ]
       }
       
