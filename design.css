@@ -454,7 +454,7 @@ body {
   color: var(--ink);
 }
 
-/*  FOOTER "INGÉNIEUR" — bas gauche  */
+/*  FOOTER  bas gauche  */
 .app-footer {
   position: fixed;
   bottom: 16px;
@@ -570,7 +570,7 @@ body {
   }
 
   .app-footer-version {
-    display: none; /* on garde ça léger sur mobile */
+    display: none; /* Save ça léger sur mobile */
   }
 
   .app-footer-bio {
