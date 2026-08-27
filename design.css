@@ -594,7 +594,7 @@ button:focus-visible,
   }
 }
 
-/* ===== PAGE D'INTRODUCTION ===== */
+/*  PAGE D'INTRODUCTION  */
 .intro-page {
   padding: 20px 10px;
   animation: fadeIn 0.5s ease;
@@ -676,7 +676,7 @@ button:focus-visible,
   }
 }
 
-/* ===== MENU BURGER (mobile) — bouton à droite ===== */
+/*  MENU BURGER  */
 .sidebar-toggle {
   display: none;
   position: fixed;
@@ -730,7 +730,7 @@ button:focus-visible,
   opacity: 1;
 }
 
-/*  RESPONSIVE — un seul point d'entrée par breakpoint  */
+/*  RESPONSIVE  */
 @media (max-width: 1024px) and (min-width: 769px) {
   .sidebar {
     width: 280px;
@@ -777,7 +777,7 @@ button:focus-visible,
   }
 
   .content-header {
-    padding: 16px 76px 16px 20px; /* espace à droite pour ne pas passer sous le burger */
+    padding: 16px 76px 16px 20px; 
   }
 
   #page-title {
