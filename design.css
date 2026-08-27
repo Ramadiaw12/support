@@ -454,6 +454,130 @@ body {
   color: var(--ink);
 }
 
+/*  FOOTER "INGÉNIEUR" — bas gauche  */
+.app-footer {
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 320px;
+  padding: 10px 16px 12px 12px;
+  background: rgba(22, 33, 62, 0.92);
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--border-ink);
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(22, 33, 62, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.app-footer:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(22, 33, 62, 0.3);
+}
+
+.app-footer-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.app-footer-status {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #3ecf8e;
+  box-shadow: 0 0 0 0 rgba(62, 207, 142, 0.6);
+  animation: pulse-status 2s infinite;
+  flex-shrink: 0;
+}
+
+@keyframes pulse-status {
+  0% {
+    box-shadow: 0 0 0 0 rgba(62, 207, 142, 0.55);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(62, 207, 142, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(62, 207, 142, 0);
+  }
+}
+
+.app-footer-text {
+  font-size: 0.76rem;
+  color: rgba(233, 230, 221, 0.8);
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  white-space: nowrap;
+}
+
+.app-footer-heart {
+  color: var(--gold);
+  font-size: 0.7rem;
+  margin: 0 1px;
+}
+
+.app-footer-brand {
+  color: var(--gold-soft);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.app-footer-brand:hover {
+  text-decoration: underline;
+}
+
+.app-footer-version {
+  font-family: 'Courier New', monospace;
+  font-size: 0.66rem;
+  color: rgba(233, 230, 221, 0.45);
+  border-left: 1px solid var(--border-ink);
+  padding-left: 9px;
+  margin-left: 2px;
+  letter-spacing: 0.3px;
+}
+
+.app-footer-bio {
+  font-size: 0.72rem;
+  line-height: 1.5;
+  color: rgba(233, 230, 221, 0.55);
+  font-style: italic;
+  padding-left: 17px; /* aligné sous le texte, pas le point de statut */
+  border-left: 2px solid rgba(184, 134, 59, 0.3);
+  margin-left: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app-footer-status {
+    animation: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-footer {
+    bottom: 10px;
+    left: 10px;
+    max-width: calc(100vw - 90px); /* laisse la place au burger à droite */
+    padding: 8px 12px 10px 10px;
+  }
+
+  .app-footer-text {
+    font-size: 0.7rem;
+    white-space: normal;
+  }
+
+  .app-footer-version {
+    display: none; /* on garde ça léger sur mobile */
+  }
+
+  .app-footer-bio {
+    font-size: 0.68rem;
+  }
+}
+
 /*  ACCESSIBILITÉ  */
 a:focus-visible,
 button:focus-visible,
