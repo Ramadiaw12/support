@@ -2,12 +2,12 @@
 
 :root {
   /* Palette — "catalogue de bibliothèque" */
-  --ink: #16213e;          /* marine profond — sidebar, titres */
-  --ink-soft: #24304f;     /* marine légèrement éclairci */
-  --paper: #faf8f3;        /* papier chaud — fond du contenu */
-  --paper-card: #ffffff;   /* cartes */
-  --gold: #b8863b;         /* doré — accent, actif */
-  --gold-soft: #d9b877;    /* doré clair — hover, détails */
+  --ink: #16213e; 
+  --ink-soft: #24304f;     
+  --paper: #faf8f3;        
+  --paper-card: #ffffff;  
+  --gold: #b8863b;         
+  --gold-soft: #d9b877;    
   --text-primary: #1a1a2e;
   --text-muted: #6b7280;
   --text-on-ink: #e9e6dd;
@@ -454,7 +454,7 @@ body {
   color: var(--ink);
 }
 
-/*  FOOTER — intégré en bas du sidebar (pas sur la page principale) */
+/*  FOOTER  */
 .app-footer {
   flex-shrink: 0;
   display: flex;
@@ -559,7 +559,7 @@ button:focus-visible,
   }
 }
 
-/* ===== PAGE D'INTRODUCTION ===== */
+/*  PAGE D'INTRODUCTION  */
 .intro-page {
   padding: 20px 10px;
   animation: fadeIn 0.5s ease;
@@ -641,7 +641,7 @@ button:focus-visible,
   }
 }
 
-/* ===== MENU BURGER (mobile) — bouton à droite ===== */
+/*  MENU BURGER  */
 .sidebar-toggle {
   display: none;
   position: fixed;
@@ -742,7 +742,7 @@ button:focus-visible,
   }
 
   .content-header {
-    padding: 16px 76px 16px 20px; /* espace à droite pour ne pas passer sous le burger */
+    padding: 16px 76px 16px 20px; 
   }
 
   #page-title {
