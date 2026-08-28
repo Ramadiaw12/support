@@ -181,7 +181,7 @@ body {
   max-height: 2000px;
 }
 
-/* sous-catégories */
+/* sous-catégories — repère "fiche de catalogue" */
 .subcategory {
   margin: 6px 0 6px 12px;
   padding-left: 14px;
@@ -454,34 +454,22 @@ body {
   color: var(--ink);
 }
 
-/*  FOOTER  bas gauche  */
+/*  FOOTER — intégré en bas du sidebar (pas sur la page principale) */
 .app-footer {
-  position: fixed;
-  bottom: 16px;
-  left: 16px;
-  z-index: 60;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   gap: 6px;
-  max-width: 320px;
-  padding: 10px 16px 12px 12px;
-  background: rgba(22, 33, 62, 0.92);
-  backdrop-filter: blur(6px);
-  border: 1px solid var(--border-ink);
-  border-radius: 14px;
-  box-shadow: 0 4px 14px rgba(22, 33, 62, 0.25);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.app-footer:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(22, 33, 62, 0.3);
+  padding: 14px 18px 16px 18px;
+  background: var(--ink);
+  border-top: 1px solid var(--border-ink);
 }
 
 .app-footer-top {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .app-footer-status {
@@ -511,7 +499,6 @@ body {
   color: rgba(233, 230, 221, 0.8);
   font-weight: 500;
   letter-spacing: 0.1px;
-  white-space: nowrap;
 }
 
 .app-footer-heart {
@@ -545,7 +532,7 @@ body {
   line-height: 1.5;
   color: rgba(233, 230, 221, 0.55);
   font-style: italic;
-  padding-left: 17px; /* aligné sous le texte, pas le point de statut */
+  padding-left: 17px;
   border-left: 2px solid rgba(184, 134, 59, 0.3);
   margin-left: 3px;
 }
@@ -553,28 +540,6 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .app-footer-status {
     animation: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .app-footer {
-    bottom: 10px;
-    left: 10px;
-    max-width: calc(100vw - 90px); /* laisse la place au burger à droite */
-    padding: 8px 12px 10px 10px;
-  }
-
-  .app-footer-text {
-    font-size: 0.7rem;
-    white-space: normal;
-  }
-
-  .app-footer-version {
-    display: none; /* Save ça léger sur mobile */
-  }
-
-  .app-footer-bio {
-    font-size: 0.68rem;
   }
 }
 
@@ -594,7 +559,7 @@ button:focus-visible,
   }
 }
 
-/*  PAGE D'INTRODUCTION  */
+/* ===== PAGE D'INTRODUCTION ===== */
 .intro-page {
   padding: 20px 10px;
   animation: fadeIn 0.5s ease;
@@ -676,7 +641,7 @@ button:focus-visible,
   }
 }
 
-/*  MENU BURGER  */
+/* ===== MENU BURGER (mobile) — bouton à droite ===== */
 .sidebar-toggle {
   display: none;
   position: fixed;
@@ -730,7 +695,7 @@ button:focus-visible,
   opacity: 1;
 }
 
-/*  RESPONSIVE  */
+/*  RESPONSIVE — un seul point d'entrée par breakpoint  */
 @media (max-width: 1024px) and (min-width: 769px) {
   .sidebar {
     width: 280px;
@@ -777,7 +742,7 @@ button:focus-visible,
   }
 
   .content-header {
-    padding: 16px 76px 16px 20px; 
+    padding: 16px 76px 16px 20px; /* espace à droite pour ne pas passer sous le burger */
   }
 
   #page-title {
