@@ -80,9 +80,11 @@
             { "titre": "24- Awesome LLM SKilss", "url": "https://github.com/Prat011/awesome-llm-skills" },
             { "titre": "25- The Agentic Second Brain That Actually Self-Evolves", "url": "https://github.com/huytieu/COG-second-brain" }
 
-
-
-
+          ],
+          "nom2": "IA Agents",
+          "liens2": [
+            { "titre": "0- OpenAI Codex", "url": "https://github.com/openai/codex" },
+            { "titre": "1- OpenClaw", "url": "https://github.com/openclaw/openclaw" }
 
           ]
         }
