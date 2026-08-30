@@ -81,7 +81,8 @@
             { "titre": "23- MCP", "url": "https://github.com/zcaceres/markdownify-mcp" },
             { "titre": "24- Awesome LLM SKilss", "url": "https://github.com/Prat011/awesome-llm-skills" },
             { "titre": "25- The Agentic Second Brain That Actually Self-Evolves", "url": "https://github.com/huytieu/COG-second-brain" },
-            { "titre": "26- FastAPI for AI Engineers", "url": "https://drive.google.com/file/d/17KEfSrfpGFe6vtknb7HPD5fbg8b9EPlQ/view" }
+            { "titre": "26- FastAPI for AI Engineers", "url": "https://drive.google.com/file/d/17KEfSrfpGFe6vtknb7HPD5fbg8b9EPlQ/view" },
+            { "titre": "27- Prompt Engineering Guide", "url": "https://github.com/dair-ai/Prompt-Engineering-Guide" }
 
           ]
           
