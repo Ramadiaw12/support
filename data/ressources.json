@@ -81,11 +81,31 @@
             { "titre": "25- The Agentic Second Brain That Actually Self-Evolves", "url": "https://github.com/huytieu/COG-second-brain" },
             { "titre": "26- FastAPI for AI Engineers", "url": "https://drive.google.com/file/d/17KEfSrfpGFe6vtknb7HPD5fbg8b9EPlQ/view" }
 
-          ],
-          "nom2": "IA Agents",
-          "liens2": [
+          ]
+          
+        },
+        
+        {
+          "nom": "IA Agents",
+          "liens": [
             { "titre": "0- OpenAI Codex", "url": "https://github.com/openai/codex" },
-            { "titre": "1- OpenClaw", "url": "https://github.com/openclaw/openclaw" }
+            { "titre": "1- OpenClaw", "url": "https://github.com/openclaw/openclaw" },
+            { "titre": "2- Superpowers", "url": "https://github.com/obra/superpowers" },
+            { "titre": "3- Hermes Agent", "url": "https://github.com/NousResearch/hermes-agent" },
+            { "titre": "4- OpenAI Codex", "url": "https://github.com/openai/codex" },
+            { "titre": "5- OpenAI Codex", "url": "https://github.com/openai/codex" },
+            { "titre": "6- OpenAI Codex", "url": "https://github.com/openai/codex" },
+            { "titre": "7- OpenAI Codex", "url": "https://github.com/openai/codex" },
+            { "titre": "8- OpenAI Codex", "url": "https://github.com/openai/codex" },
+            { "titre": "9- OpenAI Codex", "url": "https://github.com/openai/codex" },
+            { "titre": "10- OpenAI Codex", "url": "https://github.com/openai/codex" },
+            { "titre": "11- OpenAI Codex", "url": "https://github.com/openai/codex" },
+            { "titre": "12- OpenAI Codex", "url": "https://github.com/openai/codex" },
+            { "titre": "13- OpenAI Codex", "url": "https://github.com/openai/codex" },
+            { "titre": "14- OpenAI Codex", "url": "https://github.com/openai/codex" },
+
+            { "titre": "15- OpenAI Codex", "url": "https://github.com/openai/codex" },
+            { "titre": "16- OpenAI Codex", "url": "https://github.com/openai/codex" }
 
           ]
         }
