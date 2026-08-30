@@ -197,8 +197,7 @@
           { "titre": "0- Best System Design Resources", "url": "https://github.com/javabuddy/best-system-design-resources" },
           { "titre": "1- System design academie", "url": "https://github.com/systemdesign42/system-design-academy" },
           { "titre": "2- System Design notes", "url": "https://github.com/liquidslr/system-design-notes" },
-          { "titre": "3- The System Design Primer", "url": "https://github.com/donnemartin/system-design-primer" },
-          { "titre": "4- Archify", "url": "https://github.com/tt-a1i/archify" }
+          { "titre": "3- The System Design Primer", "url": "https://github.com/donnemartin/system-design-primer" }
         ]
       }
 
