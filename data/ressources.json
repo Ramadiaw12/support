@@ -39,7 +39,9 @@
             { "titre": "10- Support DevOps", "url": "https://drive.google.com/drive/u/0/folders/16kF3Xn2DXC0HQLwXi2fGD4YRaet4BrBu" },
             {"titre": "11- DevOps guide", "url": "https://github.com/mchittineni/ultimate-devops-guide" },
             { "titre": "12- DevOps Interview Questions & Answers", "url": "https://github.com/NotHarshhaa/DevOps-Interview-Questions" },
-            { "titre": "13- DevOps exercices", "url": "https://github.com/bregman-arie/devops-exercises" }
+            { "titre": "13- DevOps exercices", "url": "https://github.com/bregman-arie/devops-exercises" },
+            { "titre": "2- Important Kubernetes Interview", "url": "https://github.com/Devinterview-io/kubernetes-interview-questions" }
+
 
           ]
         }
@@ -211,8 +213,7 @@
         "nom": "Support for Lunix",
         "liens": [
           { "titre": "0- SSH Complete Course", "url": "https://pro.tecmint.com/ssh-complete-course/" },
-          { "titre": "1- Linux System Administrator", "url": "https://github.com/chassing/linux-sysadmin-interview-questions" },
-          { "titre": "2- Important Kubernetes Interview", "url": "https://github.com/Devinterview-io/kubernetes-interview-questions" }
+          { "titre": "1- Linux System Administrator", "url": "https://github.com/chassing/linux-sysadmin-interview-questions" }
         ]
       }
       
