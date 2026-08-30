@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Mapping des icônes
   const categoryIcons = {
     "Environnement de travail": "fa-solid fa-laptop-code",
-    "IA pour les devs": "fa-solid fa-brain",
+    "IA": "fa-solid fa-brain",
     "DevOps": "fa-solid fa-server",
     "Data": "fa-solid fa-database",
     "Langages": "fa-solid fa-code",
