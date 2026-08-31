@@ -253,7 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   <div class="external-link-card">
                     <i class="${domainIconClass(hostname)} external-link-card-icon"></i>
                     <h3>${lien.titre}</h3>
-                    <p> Un clic et c’est parti ! Accédez au contenu via le lien 👇</p>
+                    <p> Un clic et c’est parti ! Accédez au contenu via le lien ci-dessous👇</p>
                     <a class="external-link-card-btn" href="${lien.url}" target="_blank" rel="noopener noreferrer">
                       <i class="fas fa-external-link-alt"></i> Ouvrir ${hostname}
                     </a>
