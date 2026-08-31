@@ -183,7 +183,8 @@
             { "titre": "25- ESP32 Bit Pirate", "url": "https://github.com/geo-tp/ESP32-Bit-Pirate" },
             { "titre": "26- Hackings Articles", "url": "https://www.hackingarticles.in/ai-powered-penetration-testing-with-metasploit/" },
             { "titre": "27- OSINT-Framework", "url": "https://github.com/lockfale/OSINT-Framework" },
-            { "titre": "28- Automatise la collecte OSINT", "url": "https://github.com/smicallef/spiderfoot" }
+            { "titre": "28- Automatise la collecte OSINT", "url": "https://github.com/smicallef/spiderfoot" },
+            { "titre": "29- TheHarvester", "url": "https://github.com/laramies/theHarvester" }
           ]
         }
       ]
