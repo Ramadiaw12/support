@@ -2,12 +2,12 @@
 
 :root {
   /* Palette — "catalogue de bibliothèque" */
-  --ink: #16213e; 
-  --ink-soft: #24304f;     
-  --paper: #faf8f3;        
-  --paper-card: #ffffff;  
-  --gold: #b8863b;         
-  --gold-soft: #d9b877;    
+  --ink: #16213e;          /* marine profond — sidebar, titres */
+  --ink-soft: #24304f;     /* marine légèrement éclairci */
+  --paper: #faf8f3;        /* papier chaud — fond du contenu */
+  --paper-card: #ffffff;   /* cartes */
+  --gold: #b8863b;         /* doré — accent, actif */
+  --gold-soft: #d9b877;    /* doré clair — hover, détails */
   --text-primary: #1a1a2e;
   --text-muted: #6b7280;
   --text-on-ink: #e9e6dd;
@@ -454,7 +454,7 @@ body {
   color: var(--ink);
 }
 
-/*  FOOTER  */
+/*  FOOTER — intégré en bas du sidebar (pas sur la page principale) */
 .app-footer {
   flex-shrink: 0;
   display: flex;
@@ -535,6 +535,39 @@ body {
   padding-left: 17px;
   border-left: 2px solid rgba(184, 134, 59, 0.3);
   margin-left: 3px;
+}
+
+.app-footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 2px;
+  padding-left: 17px;
+}
+
+.app-footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  color: rgba(233, 230, 221, 0.55);
+  background: transparent;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+
+.app-footer-social-link:hover {
+  background: rgba(184, 134, 59, 0.16);
+  color: var(--gold-soft);
+  transform: translateY(-1px);
+}
+
+.app-footer-social-link:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -695,7 +728,7 @@ button:focus-visible,
   opacity: 1;
 }
 
-/*  RESPONSIVE — un seul point d'entrée par breakpoint  */
+/*  RESPONSIVE   */
 @media (max-width: 1024px) and (min-width: 769px) {
   .sidebar {
     width: 280px;
