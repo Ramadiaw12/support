@@ -121,15 +121,14 @@
           "nom": "CLoud computing",
           "liens":[
             { "titre": "0- Everything for the cloud", "url": "https://drive.google.com/drive/u/0/folders/1_iB9UnsVlOWvdjKVmtC7b8b26L2ORdVR" },
-            { "titre": "1- English ", "url": "https://drive.google.com/drive/u/0/folders/1UVI5yT-5JfMwyHHloxPwkuuPm08L_zBn" },
-            { "titre": "2- Clouds Blueprints", "url": "https://github.com/ravikiranpagidi/alibaba-cloud-blueprints"},
-            { "titre": "3- Cloud Engineer", "url": "https://github.com/AhmedAlhusaini/AWS-Cloud-Practitioner-SelfStudy-Materials" },
-            { "titre": "4- AWS Infra", "url": "https://github.com/rusets/aws-multi-tier-infra"},
-            { "titre": "5- Google cloud", "url": "https://github.com/7twoduo/GCP-Runtime-Domain-Load-Balancer" },
-            { "titre": "6- AWS Networking - Quick projects ideas", "url": "https://thetechfusionist.com/2024/02/29/aws-networking-quick-projects-ideas/" },
-            { "titre": "7- Terraform + Azure : 7 bite size projects", "url": "https://thetechfusionist.com/2024/02/19/terraform-azure-7-bite-size-projects/" },
-            { "titre": "8- DevOps-AWS-Interview-QA", "url": "https://github.com/rdwr-vijaykumarb/DevOps-AWS-Interview-QA" },
-            { "titre": "9- Open-source local AWS emulator", "url": "https://github.com/ministackorg/ministack" }
+            { "titre": "1- Clouds Blueprints", "url": "https://github.com/ravikiranpagidi/alibaba-cloud-blueprints"},
+            { "titre": "2- Cloud Engineer", "url": "https://github.com/AhmedAlhusaini/AWS-Cloud-Practitioner-SelfStudy-Materials" },
+            { "titre": "3- AWS Infra", "url": "https://github.com/rusets/aws-multi-tier-infra"},
+            { "titre": "4- Google cloud", "url": "https://github.com/7twoduo/GCP-Runtime-Domain-Load-Balancer" },
+            { "titre": "5- AWS Networking - Quick projects ideas", "url": "https://thetechfusionist.com/2024/02/29/aws-networking-quick-projects-ideas/" },
+            { "titre": "6- Terraform + Azure : 7 bite size projects", "url": "https://thetechfusionist.com/2024/02/19/terraform-azure-7-bite-size-projects/" },
+            { "titre": "7- DevOps-AWS-Interview-QA", "url": "https://github.com/rdwr-vijaykumarb/DevOps-AWS-Interview-QA" },
+            { "titre": "8- Open-source local AWS emulator", "url": "https://github.com/ministackorg/ministack" }
 
 
           ]
@@ -201,7 +200,9 @@
           { "titre": "1- System design academie", "url": "https://github.com/systemdesign42/system-design-academy" },
           { "titre": "2- System Design Interview", "url": "https://github.com/liquidslr/system-design-notes" },
           { "titre": "3- The System Design Primer", "url": "https://github.com/donnemartin/system-design-primer" },
-          { "titre": "4- Top 10 REST API, Microservices", "url": "https://www.java67.com/" }
+          { "titre": "4- Top 10 REST API, Microservices", "url": "https://www.java67.com/" },
+          { "titre": "5- English ", "url": "https://drive.google.com/drive/u/0/folders/1UVI5yT-5JfMwyHHloxPwkuuPm08L_zBn" },
+
         ]
       }
 
