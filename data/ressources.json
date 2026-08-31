@@ -105,7 +105,8 @@
             { "titre": "13- Awesome Agent Skills", "url": "https://github.com/VoltAgent/awesome-agent-skills" },
             { "titre": "14- Agent Skills", "url": "https://github.com/mattpocock/skills" },
 
-            { "titre": "15- Archify", "url": "https://github.com/tt-a1i/archify" }
+            { "titre": "15- Archify", "url": "https://github.com/tt-a1i/archify" },
+            { "titre": "16- HackAgent", "url": "https://github.com/AISecurityLab/hackagent" }
 
           ]
         }
