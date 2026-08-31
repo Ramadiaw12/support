@@ -184,7 +184,8 @@
             { "titre": "26- Hackings Articles", "url": "https://www.hackingarticles.in/ai-powered-penetration-testing-with-metasploit/" },
             { "titre": "27- OSINT-Framework", "url": "https://github.com/lockfale/OSINT-Framework" },
             { "titre": "28- Automatise la collecte OSINT", "url": "https://github.com/smicallef/spiderfoot" },
-            { "titre": "29- TheHarvester", "url": "https://github.com/laramies/theHarvester" }
+            { "titre": "29- TheHarvester", "url": "https://github.com/laramies/theHarvester" },
+            { "titre": "30- Secure A Linux Server", "url": "https://github.com/imthenachoman/How-To-Secure-A-Linux-Server" }
           ]
         }
       ]
